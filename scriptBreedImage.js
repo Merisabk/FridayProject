@@ -13,5 +13,4 @@ const showRandomDog = () => {
     });
 }
 
-
 showRandomDog();
