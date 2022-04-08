@@ -3,4 +3,4 @@
 export const outputBreedName = document.querySelector('#outputBreedName');
 export const inputChooseBreed = document.querySelector('#inputChooseBreed');
 export const outputRandomBreedImage = document.querySelector('#outputRandomBreedImage');
-export const outputTest = document.querySelector('#test');
+export const buttonNewRandomDogImage = document.querySelector('#buttonNewRandomDogImage');
