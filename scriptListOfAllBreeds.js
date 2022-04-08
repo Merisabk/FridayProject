@@ -6,7 +6,7 @@ const listDogs = () => {
     axios.get(`https://dog.ceo/api/breeds/list/all`)
     .then(response => {
         for (let breed of Object.keys(response)) {
-        childToContainer(imageToChild(nameToImage(breed)));
+        childToContainer(breedToFigure(breed));
         }
       }).catch((err) => {
         console.log(err);
@@ -23,12 +23,24 @@ const nameToImage = (breedName) => {
     });
 }
 
-const imageToChild = image => {
-    const child = document.createElement(`img`);
-    child.width = "128";
-    child.height= "128";
-    child.src = image;
-    return child;
+const breedToFigure = (breed) => {
+    const figureContainer = document.createElement(`figure`);
+    figureContainer.innerHTML = `${imageToContainer(nameToImage(breed))}${breedNameToContainer(breed)}`
+    return figureContainer;
+}
+
+const imageToContainer = image => {
+    const imageContainer = document.createElement(`img`);
+    imageContainer.width = "128";
+    imageContainer.height= "128";
+    imageContainer.src = image;
+    return imageContainer;
+}
+
+const breedNameToContainer = breed => {
+    const breedNameContainer = document.createElement(`figcaption`);
+    breedNameContainer.innerHTML = `${breed}`;
+    return breedNameContainer;
 }
 
 const childToContainer = child => {
