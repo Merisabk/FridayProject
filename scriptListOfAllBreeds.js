@@ -6,6 +6,8 @@ const listDogs = () => {
     axios.get(`https://dog.ceo/api/breeds/list/all`)
     .then(response => {
         for (let breed of Object.keys(response)) {
+            console.log(response);
+            console.log(response.data);
         childToContainer(breedToFigure(breed));
         }
       }).catch((err) => {
@@ -47,3 +49,4 @@ const childToContainer = child => {
     DOM.outputListOfAllBreeds.appendChild(child);
 }
 
+listDogs();

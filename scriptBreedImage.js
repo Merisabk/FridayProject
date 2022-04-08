@@ -2,8 +2,8 @@
 
 import * as DOM from './domBreedImage.js';
 
-// RandomDogImage
-const showRandomDog = () => {
+// RandomBreedImage
+const showRandomBreedImage = () => {
     axios.get(`https://dog.ceo/api/breeds/image/random`)
         .then(response => {
         console.log(response);
@@ -13,4 +13,4 @@ const showRandomDog = () => {
     });
 }
 
-showRandomDog();
+showRandomBreedImage();
