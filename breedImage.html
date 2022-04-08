@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-  <style>
-      nav {
+    <title>Document</title>
+
+<!-- CSS only --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+
+nav {
           background-color: #333333;   
       }
 
@@ -34,40 +28,57 @@
           color:white;
 
       }
-     nav a:hover, nav li.active a {
-    color: blueviolet;
-}
-  </style>
-    <title>FridayProject</title>
+
+    </style>
 </head>
-<header>
-<div class="container">
-    <nav class="d-flex justify-content-between">
-        <a class="navbar-brand d-none d-md-flex" href = "#" title="homepage"></a>
-      <ul>
-        <li class="nav-list-item">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-link" href="./listOfAllBreeds.html">List of all breeds</a>
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-link" href="./breedImage.html">Random breed</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+
 
 
 <body>
-    <h1>
-        Friday Project
-    </h1>
-        
 
 
+  <header>
+      <div class="container">
+          <nav class="d-flex justify-content-between">
+              <a class="navbar-brand d-none d-md-flex" href = "#" title="homepage"></a>
+            <ul>
+              <li class="nav-list-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="./listOfAllBreeds.html">List of all breeds</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="./breedImage.html">Random breed</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
+<div>
+    <form>
+      <label id="outputBreedName">
+        dog name 
+      </label>
+</form>
+
+</div>
+    <input type="text" id="inputChooseBreed">
+    <div class="randomDogButton">
+     
+    <button id="buttonNewRandomDogImage">see new doggo </button>
+
+    <div>
+            <img id="outputRandomBreedImage" src="./dog.jpg"  alt="ImageWasHere" width="100%">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="./scriptBreedImage.js"></script>
+<!-- JavaScript Bundle with Popper --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
 
+
+
+</html>

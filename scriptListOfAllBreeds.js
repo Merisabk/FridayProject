@@ -16,7 +16,7 @@ const listDogs = () => {
 }
 
 const nameToImage = (breedName) => {
-    axios.get(`https://dog.ceo/api/breeds/${breedName}/image/random`)
+    axios.get(`https://dog.ceo/api/breed/${breedName}/images/random`)
         .then(response => {
         console.log(response);
         return response.data.message;
