@@ -28,4 +28,4 @@ const showRandomDog = () => {
         console.log(err);
     });
 }
-showRandomDog();
+showRandomBreedImage();
